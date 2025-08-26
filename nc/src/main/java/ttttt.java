@@ -12,7 +12,7 @@ public class ttttt {
 
     }
 
-    public static void Exec(String cls,String method,ArrayList list) throws Exception{
+    public static void Exec(String cls,String method,Object list) throws Exception{
         Class clazz = Class.forName("com.ufida.zior.console.ActionExecutor");
         Method met = clazz.getDeclaredMethod("exec",new Class<?>[]{String.class,String.class,Object.class});
         met.setAccessible(true);
@@ -20,3 +20,4 @@ public class ttttt {
 
     }
 }
+
